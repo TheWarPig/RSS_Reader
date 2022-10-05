@@ -7,4 +7,5 @@ print(len(entries))
 for i in range(5):
     print(entries[i].title)
     print(f"Summary: " + entries[i].summary)
-    print("Link: " + entries[i].link)
+    print("Published: " + str(entries[i].published).split(' +')[0])
+    print()
